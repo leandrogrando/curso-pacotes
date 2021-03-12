@@ -1,7 +1,7 @@
 {
     "name": "leandrogrando/curso-pacote",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Projeto em Laravel para ser usado como base pro curso de pacotes com Composer",
     "keywords": [
         "framework",
         "laravel"
