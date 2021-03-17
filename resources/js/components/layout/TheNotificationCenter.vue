@@ -58,8 +58,9 @@ export default {
         var notifications = res.data
         for (var k in notifications) {
             notifications[k].createdAt = this.$moment().format()
+            notifications[k]._id = notifications[k].id
+            notifications[k].read = notifications[k].read === 0
         }
-        console.log(notifications);
         vm.notifications = notifications
         vm.loading = false
       })
