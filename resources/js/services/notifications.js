@@ -1,15 +1,8 @@
 import axios from '../plugins/axios'
-const category = 'wordpress'
-const buckedPrefix = 'https://bucket.services.builderall.com/notification'
 const apiPrefix = '/notifications'
 
-export const index = (owner) => {
-  return axios.get(`${buckedPrefix}/filter`, {
-    params: {
-      owner: owner,
-      category: category
-    }
-  })
+export const index = () => {
+   return axios.get(`${apiPrefix}/index`)
 }
 
 export const hasUnreadNotifications = () => {

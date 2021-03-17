@@ -55,7 +55,12 @@ export default {
       this.loading = true
       const vm = this
       index(this.$page.props.user.hash).then(res => {
-        vm.notifications = res.data
+        var notifications = res.data
+        for (var k in notifications) {
+            notifications[k].createdAt = this.$moment().format()
+        }
+        console.log(notifications);
+        vm.notifications = notifications
         vm.loading = false
       })
     },
