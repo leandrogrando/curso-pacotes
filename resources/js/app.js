@@ -6,10 +6,12 @@ import '../scss/app.scss';
 import 'builderall-vue-ui/dist/builderall-vue-ui.css';
 import { InertiaProgress } from '@inertiajs/progress'
 import Layout from './Layouts/Layout.vue'
+import VueMoment from 'vue-moment'
 
 Vue.use(BootstrapVue);
 Vue.use(BuilderallVueUi);
 Vue.use(plugin)
+Vue.use(VueMoment)
 
 const el = document.getElementById('app')
 
